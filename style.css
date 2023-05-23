@@ -328,25 +328,45 @@ aside{
 }
 
 aside .container-natureza{
-    width: 120%;
-    height: 100vh;
+    position: relative;
+    width: 80%;
+    height: 70vh;
     overflow: hidden;
     background-color: #060707b0;
     background-image: url(components/imagens/foto-sabonete.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-
+    border: 1px solid white;
+    z-index: 1;
+    transition: 2s ease-out;
 }
 
-.texto-natureza{
-    text-align: center;
+aside .container-natureza:hover{
+    filter: blur(2px);
+    box-shadow: 5px -3px 3px 9px  #05FC58;
+}
+
+aside .texto-natureza{
     position: absolute;
-    right: 30px;
+    text-align: center;
+    left: 55%;
     width: 200px;
     height: 150px;
-    background-color: rgba(240, 248, 255, 0.39);
+    background-color: rgba(240, 248, 255, 0.638);
     color: black;
+    z-index: 2;
+    filter: none;
+    border-radius: 10px;
+}
+
+aside .h1-natureza{
+    position: absolute;
+    text-align: center;
+    top:30px;
+    z-index: 3;
+
+
 }
 
 /*FOOTER*/
