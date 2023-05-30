@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <script defer src="app.js"></script>
 </head>
 </head>
-<body>
-  <header class="container-fluid">
+<body class="full">
+  <header class="container-fluid hidden">
     <nav class="navbar navbar-expand-lg pb-2 pt-4">
       <div class="container-fluid">
         <h1 class="navbar-brand text-white" id="jose" href="#">José Goulart</h1>
@@ -21,21 +22,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+              <a class="nav-link text-white" aria-current="#page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Projects</a>
+              <a class="nav-link text-white" aria-current="page" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#projects">Projects</a>
             </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">About</a>
+              <a class="nav-link text-white" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>  
     </nav> 
   </header>
-  <main class="container-fluid pb-5">
+  <main class="container-fluid pb-5 hidden" id="home">
     <p id="letter">Dev</p>
     <p id="letter-2"> {...}</p>
     <div class="container row">
@@ -63,12 +67,12 @@
     </div>
   </main>
 
-  <section class="section-2 container-fluid pb-5">
-    <h2 class="container text-white text-center"><strong>Ski</strong>lls</h2>
-    <p class="container text-center">Please hover your mouse over the card, or tap on the card if you are on mobile.</p>
+  <section class="section-2 container-fluid pb-5 hidden" id="skills">
+    <h1 class="container text-white text-center pb-3"><strong>Ski</strong>lls</h1>
+    <p class="container text-center pb-3">Please hover your mouse over the card, or tap on the card if you are on mobile.</p>
     <div class="card">
       <div class="content">
-        <h4><strong>-Html-</strong></h4>
+        <h4><strong>HTML</strong></h4>
         <img src="components/imagens/html-image.webp" alt="html icone imagem">
         <p>I have a year of experience with this topic</p>
         
@@ -77,7 +81,7 @@
 
     <div class="card">
       <div class="content">
-        <h4><strong>-Css-</strong> </h4>
+        <h4><strong>CSS</strong> </h4>
         <img src="components/imagens/css-image.webp" alt="css icone imagem">
         <p>I have a year of experience with this topic</p>
         
@@ -86,25 +90,25 @@
 
     <div class="card">
       <div class="content">
-        <h4><strong>-JavaScript-</strong></h4>
+        <h4><strong>JavaScript</strong></h4>
         <img src="components/imagens/javascript-image.png" alt="javascript icone imagem">
         <p>I have three months of experience with this topic</p>
         
       </div>
     </div>
 
-
-
   </section>
   
-  <section class="container-fluid">
+  <section class="container-fluid hidden" id="projects">
 
-    <h2 class="title-project pb-5"><strong>Pro</strong>jects</h2>
+    <h1 class="text-center pb-4 text-light"><strong>Pro</strong>jects</h1>
+
+    <p class=" container text-center pb-5 ">all designs were made using Html, Bootstrap, Css and Javascript technologies</p>
 
     <div class="area-project container-fluid row">
 
         <div class="project effect projeto-1 container col-5 mb-5">
-          
+            
         </div>
         
         <div class="project effect projeto-2 container col-5  mb-5">
@@ -125,34 +129,31 @@
     
   </section>
 
-  <aside class="container-fluid pb-5">
-    <p class="texto-natureza">this year I had my first opportunity to work as a web designer, with the people of  @natureza.ciclica</p>
-    <h1 class="h1-natureza">Web<strong>site</strong></h1>
-      <div class="container-natureza">
-      
+  <aside class="container-fluid pt-5 hidden">
+      <div class="container-natureza pt-5">
+        <div class="">
+          <h6 class="text-light">@naturezaciclica</h6>
+          <h6 class="text-light">Work developed for the @naturezaciclica group in 05/2023.</p>
+          <button class="btn-natureza" type="button">Launch</button>
+        </div>  
       </div>
     </div>
-
   </aside>
 
-  <footer>
-
-        <div class="container-fluid">
-
-          <h1 class="text-center pb-5"> <strong>/*</strong> Let's <strong>work</strong> together <strong>*/</strong></h1>
+  <footer class="contact hidden">
+        <div class="container-fluid pt-5">
+          <h1 class="text-center pb-5"> <strong>/*</strong> Let's work together <strong>*/</strong></h1>
           <div class="container-fluid row">
             <div class="container col">
-              <h3 class="pb-4 footer-contact"><strong>-------</strong> Contact <strong>--------</strong></h3>
+              <h3 class="pb-4 footer-contact text-center"> Contact </h3>
               <ul>
                 <li class="pb-4 text-center">juniorgoulartregio@hotmail.com</li>
                 <li class="pb-4 text-center">+55 51 995346316</li>
                 <li class="pb-4 text-center">github.com/JoseGoullart</li>
               </ul>
-            </div>   
-            <iframe class="col pb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.0148352815739!2d-38.4134235065542!3d-12.968054655892763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161a3b98a8a1f9%3A0xc0cdc687ca605070!2sAv.%20Netuno%2C%204%20-%20Pitua%C3%A7u%2C%20Salvador%20-%20BA%2C%2041740-450!5e0!3m2!1spt-BR!2sbr!4v1682287764414!5m2!1spt-BR!2sbr" width="250" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> 
           </div>
         </div>
-
   </footer>
 
 
@@ -162,9 +163,9 @@
     const scene = new THREE.Scene();
     scene.background = new THREE.Color("rgb 255, 255, 255");
     const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-  
+   
 
-    const renderer = new THREE.WebGLRenderer();
+    const renderer = new THREE.WebGLRenderer({alpha: true});
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
 
