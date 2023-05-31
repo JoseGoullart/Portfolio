@@ -186,16 +186,6 @@ main{
     }
 }
 
-a{
-    position: relative;
-    color: #fff;
-    text-decoration: none;  
-}
-
-a:hover{
-    transition: 1s;
-    transform: scale(1.2);
-}
 .photo{
     width: 200px;
     height: 200px;
