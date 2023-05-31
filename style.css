@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Raleway:ital,wght@0,200;0,400;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
 
 
 *{
@@ -312,7 +313,7 @@ section{
 }
 
 .section-2 .card .content{
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     transform: translateY(100px);
     opacity: 0;
@@ -323,8 +324,7 @@ section{
     opacity: 1;
 }
 
-.section-2 .card:hover .content h2{
-    
+.section-2 .card:hover .content h2{ 
     top: -80px;
     right: 30px;
     font-size: 8em;
@@ -369,19 +369,20 @@ aside .container-natureza:hover{
 .btn-natureza{
     position: relative;
     text-align: center;
-    font-size: larger;
+    font-size: 25px;
     width: 200px;
     height: 50px;
     color: rgba(0, 0, 0, 0.894);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.672);
     border-radius: 10px;
-    font-family: 'raleway'; 
-    transition: 0.3s;
+    font-family: 'Oxygen' ; 
+    transition: 0.6s;
+    opacity: 0.9;
 }
 
 .btn-natureza:hover{
-    color: rgba(0, 0, 0, 0.894);
-    background-color: white;
+    color: rgb(0, 255, 229);
+    background-color: rgba(0, 0, 0, 0.689) ;
     letter-spacing: 5px;
 }
 
@@ -396,6 +397,7 @@ footer ul{
 
 footer .footer-contact{
     font-family: 'Raleway';
+    text-align: center;
 }
 
 #canvas{
