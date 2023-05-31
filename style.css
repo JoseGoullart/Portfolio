@@ -242,29 +242,32 @@ section{
 
 .projeto-1{
 
-    background: url(components/imagens/naruto.webp);
+    background: url(components/imagens/naruto.jpg);
     background-position: center center;
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .projeto-2{
-    background: url(components/imagens/bird.jpg);
+    background: url(components/imagens/cadeado.png);
     background-position: center center;
     background-size: cover;
+    background-color: rgba(127, 255, 212, 0.437);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .projeto-3{
-    background: url(components/imagens/cadeado.jpg);
+    background: url(components/imagens/cadeado.png);
     background-position: center center;
     background-size: cover;
+    background-color: rgba(127, 255, 212, 0.437);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .projeto-4{
-    background: url(components/imagens/cadeado.jpg);
+    background: url(components/imagens/cadeado.png);
     background-position: center center;
     background-size: cover;
+    background-color: rgba(127, 255, 212, 0.437);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -410,4 +413,3 @@ footer .footer-contact{
     left: 100px;
 }
 
-  
